@@ -17,10 +17,11 @@ public class UjianTengahSemester {
         Scanner in2 = new Scanner (System.in);
         do{
         System.out.println("Menu 1");
-		System.out.println("Tampilan 1:");
-		System.out.print("\t*****\n");
-		System.out.print(" \t ***\n");
-		System.out.print("  \t  *\n");
+		System.out.println("Tampilan Huruf deskripsi:\n");
+		System.out.println("Input huruf A-Z:");
+		System.out.print("\tAAAAAA\n");
+		System.out.print(" \t AAA\n");
+		System.out.print("  \t  A\n");
         System.out.println("\nMenu 2");
 		System.out.println("Tampilan 2:");
 		System.out.print("\t1\n");
