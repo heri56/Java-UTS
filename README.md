@@ -1,2 +1,2 @@
 # Java-UTS
-Ujian Praktikum Java Esa Unggul
+Ujian Praktikum Java Universitas Esa Unggul
