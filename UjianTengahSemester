@@ -1,0 +1,111 @@
+/**
+ *
+ * @author Heri Prastio
+ */
+package ujiantengahsemester;
+
+import java.util.Scanner;
+
+
+public class UjianTengahSemester {
+    @SuppressWarnings("empty-statement")
+    public static void main (String[] args){
+        int d =10;
+        int pil;
+        int no_input;
+        Scanner in1 = new Scanner (System.in);
+        Scanner in2 = new Scanner (System.in);
+        do{
+        System.out.println("Menu 1");
+		System.out.println("Tampilan 1:");
+		System.out.print("\t*****\n");
+		System.out.print(" \t ***\n");
+		System.out.print("  \t  *\n");
+        System.out.println("\nMenu 2");
+		System.out.println("Tampilan 2:");
+		System.out.print("\t1\n");
+		System.out.print("\t1 2\n");
+		System.out.print("\t1 2 3\n");
+		System.out.print("\t1 2 3 4\n");
+		System.out.print("\t1 2 3 4 5\n");
+		System.out.print("\t1 2 3 4 5 6\n");
+        System.out.println("\n\nMenu 3");
+		System.out.print("      *\n");
+		System.out.print("    ***\n");
+		System.out.print("   ****\n");
+		System.out.print("  *****\n");
+        System.out.println("\nMenu 4");
+		System.out.print("\t10987654321");
+		System.out.print("  \n\t 987654321");
+		System.out.print("  \n\t  87654321");
+		System.out.print("  \n\t   7654321");
+		System.out.print("  \n\t    654321");
+		System.out.print("  \n\t     54321");
+		System.out.print("  \n\t      4321");
+		System.out.print("  \n\t       321");
+		System.out.print("  \n\t        21");
+		System.out.print("  \n\t         1\n");
+        System.out.println("Pilih");
+        pil = in1.nextInt();
+        System.out.println("Berapa & Tampilan?");
+        no_input = in2.nextInt();
+        System.out.println("Nested Loop");
+        int no = no_input;
+        System.out.println("Hasil & Tampilan");
+        if (pil == 1){
+            for (int a=0; a<no_input; a++){
+                for(int b = 1; b<a; b++)
+                {
+                    System.out.print(" ");
+                }
+                for(int b=1; b<no; b++)
+                {
+                    System.out.print("a");
+                }
+                for(int b = no-1; b>1; b--)
+                {
+                    System.out.print("a");
+                }
+                System.out.println();
+                no--;
+            }
+            
+        }
+        else if (pil == 2){
+            for(int a =1; a<=no_input; a++){
+            for(int b=1; b<=no_input; b++){
+                if(b<=a){
+                    System.out.print(a+" ");
+                } else {
+                    
+                    
+                }
+            }
+            System.out.println();
+        }
+        }
+        else if (pil == 3){
+            for(int a=1; a<=no_input; a++){
+                for(int b=no_input; b>=1; b--)
+                {
+                    if(b>a)
+                        System.out.print(" ");
+                    else
+                        System.out.print("*");
+                }
+                System.out.println();
+            }
+        }
+        else if (pil ==4){
+            for(int a=0; a<no; a++){
+                for (int b=0; b<a; b++)
+                    System.out.print(" ");
+                for(int c=no-a; c>0; c--)
+                    System.out.print(c);
+                System.out.println();
+            }
+            
+        }
+        }while( d < 20);
+    }
+   }
